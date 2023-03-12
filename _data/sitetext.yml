@@ -24,12 +24,15 @@ en: &DEFAULT_EN
       - title: "Speech Therapy"
         desc: ""
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+        image: "assets/img/services/speech_therapy.jpg"
       - title: "Occupational Therapy"
         desc: ""
         icon: fas fa-laptop
+        image: "assets/img/services/occupational_therapy.jpg"
       - title: "TEACHH Method (Structured Method)"
         desc: ""
         icon: fab fa-markdown
+        image: "assets/img/services/autism.jpg"
 
   portfolio:
     title: "Portfolio"
