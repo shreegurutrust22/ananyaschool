@@ -170,7 +170,7 @@ en: &DEFAULT_EN
 
   contact:
     title: "<br/>Contact Us"
-    text: "<br/><br/>No.151, Sri Guru, Ananya School for Autism,<br/><br/>S Nijalingappa layout, Davanagere<br/><br/>Ph: 9916485871, 9019965603<br/><br/>Email: shreegurutrust22@gmail.com<br/><br/><br/><br/><br/><br/><br/><br/>"
+    text: "No.151, Sri Guru, Ananya School for Autism,<br/><br/>S Nijalingappa layout, Davanagere<br/><br/>Ph: 9916485871, 9019965603<br/><br/>Email: shreegurutrust22@gmail.com"
     section: contact
     name: "Name*"
     name-validation: "Please enter your name."
