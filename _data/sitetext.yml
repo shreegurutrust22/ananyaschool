@@ -59,8 +59,8 @@ en: &DEFAULT_EN
 #            icon:
 #          - url:
 #            icon:
-      - name: "Tanuja Talele Gold medalist MSc"
-        role: "MSc in speech language pathology AIISH"
+      - name: "Tanuja Talele"
+        role: "Gold medalist MSc in speech language pathology from AIISH"
         image: assets/img/team/tanuja_talele.png
         social:
 #          - url: https://twitter.com
@@ -85,8 +85,8 @@ en: &DEFAULT_EN
     subtext: ""
     section: team
     people:
-      - name: "Shobha BSc"
-        role: "Speech Language Pathologist"
+      - name: "Shobha"
+        role: "BSc, Speech Language Pathologist"
         image: assets/img/team/shobha.png
         social:
 #          - url: https://twitter.com
@@ -118,7 +118,7 @@ en: &DEFAULT_EN
 
   contact:
     title: "<br/>Contact Us"
-    text: "No.151, Sri Guru, Ananya School for Autism,<br/><br/>S Nijalingappa layout, Davanagere<br/><br/>Ph: 9916485871, 9019965603<br/><br/>Email: shreegurutrust22@gmail.com"
+    text: "No.151, Sri Guru, Ananya School for Autism,<br/><br/>S Nijalingappa layout, Davanagere<br/><br/>Ph: 9916485871, 9019965603<br/><br/>Email: ananyashreeguru@gmail.com"
     section: contact
     name: "Name*"
     name-validation: "Please enter your name."
