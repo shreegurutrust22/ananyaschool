@@ -20,6 +20,11 @@
 <!--            <i class="{{ service.icon | default: "fas fa-shopping-cart" }} fa-stack-1x fa-inverse"></i>-->
             <img class="fa-stack-1x fa-inverse" src="{{ service.image }}" alt="">
           </span>
+          <div>
+            <span class="service-attribution text-muted">
+              Image by <a href="{{ service.attributelink }}">Freepik</a>
+            </span>
+          </div>
           <h4 class="service-heading">{{ service.title | markdownify }}</h4>
           {% if service.desc %}<div class="text-muted">{{ service.desc | markdownify }}</div>{% endif %}
         </div>

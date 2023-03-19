@@ -25,75 +25,23 @@ en: &DEFAULT_EN
         desc: "Speech therapy plays a critical role in helping individuals with autism to develop not only for just communication skills, but enhance social interaction, reduce behavioral issues through emotional regulation, build confidence, and increase independence and there by the quality of life. It is an essential part of the overall treatment plan for individuals with autism and can make a significant difference in their lives."
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
         image: "assets/img/services/speech_therapy.jpg"
+        attributelink: "https://www.freepik.com/free-vector/creative-speech-therapy-illustration_21742995.htm#query=speech%20therapy&position=1&from_view=search&track=ais#position=1&query=speech%20therapy"
       - title: "Occupational Therapy"
         desc: "Occupational therapy is an essential component of the treatment plan for individuals with autism. By improving sensory integration (minimizing the difficulties of Hyper or hypo reactivity to sensory inputs they experience), motor skills, self-care, play skills, and independence. OT can help individuals with autism become more successful in daily activities."
         icon: fas fa-laptop
         image: "assets/img/services/occupational_therapy.jpg"
+        attributelink: "https://www.freepik.com/free-vector/hand-drawn-flat-design-occupational-therapy-illustration_25632467.htm#query=occupational%20therapy&position=0&from_view=search&track=ais#position=0&query=occupational%20therapy"
       - title: "TEACHH Method (Structured Method)"
         desc: "TEACCH (Treatment and Education of Autistic and related Communication-handicapped Children) is an evidence-based intervention with practices specifically for individuals with ASD by means of individualized approach/plan, visual supports, a structured environment, family involvement all of which help succeed in academic, social, and daily living activities."
         icon: fab fa-markdown
         image: "assets/img/services/autism.jpg"
-
-  portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: portfolio
-    closebutton: "Close Project"
-
-  timeline:
-    title: "Timeline"
-    text: "Lorem ipsum timeline"
-    section: timeline
-    # left is the default
-    #start_align: "left"
-    events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
-        desc: ""
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: ""
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
-        image: assets/img/timeline/3.jpg
-        alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "Be Part <br> of Our <br> Story!"
+        attributelink: "https://www.freepik.com/free-vector/health-flat-design-autism-logo_24482654.htm#query=autism%20logo&position=6&from_view=search&track=ais"
 
   about:
     title: "About Us"
     text: "our story"
     body: "The idea of opening a autism school came to the parents, Dr.Suman and Dr.Pramod, when their son Archith was diagnosed with autism. It was their dream to serve kids with autism as they could sense that parental acceptance and therapies would work significantly. It was established in April 2022."
     section: about
-
-  clients:
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
 
   teamrow1:
     title: "OUR AMAZING TEAM"
