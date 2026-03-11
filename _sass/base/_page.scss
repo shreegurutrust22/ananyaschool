@@ -5,13 +5,15 @@ body {
 }
 
 p {
-  line-height: 1.75;
+  line-height: 1.85;
 }
 
 a {
   color: $primary;
+  transition: color 0.25s ease;
   &:hover {
     color: darken($primary, 10%);
+    text-decoration: none;
   }
 }
 
@@ -35,6 +37,15 @@ h6 {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
+    &::after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 4px;
+      background: $primary;
+      border-radius: 2px;
+      margin: 14px auto 0;
+    }
   }
   h3.section-subheading {
     font-size: 16px;

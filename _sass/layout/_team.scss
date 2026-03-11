@@ -2,17 +2,39 @@
 .team-member {
   margin-bottom: 50px;
   text-align: center;
+  padding: 30px 20px;
+  border-radius: 12px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  }
   img {
-    width: 225px;
-    height: 225px;
-    border: 7px solid fade-out($black, 0.9);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #8ab4b4;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+    &:hover {
+      border-color: #8f1718;
+      box-shadow: 0 8px 25px rgba(143, 23, 24, 0.25);
+    }
   }
   h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
     text-transform: none;
+    color: #2d2d2d;
   }
   p {
     margin-top: 0;
+    color: #8ab4b4;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    @include heading-font;
   }
 }

@@ -1,6 +1,6 @@
 // Styling for the navbar
 #mainNav {
-  background-color: #8ab4b4;
+  background-color: #8ab4b4; // mobile fallback
   .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -8,66 +8,101 @@
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #832b2f;
+    background-color: rgba(143, 23, 24, 0.85);
     @include heading-font;
   }
   .navbar-brand {
-    color: #8f1718;
+    color: white;
     @include script-font;
     &.active,
     &:active,
     &:focus,
     &:hover {
-      color: darken(#8f1718, 10%);
+      color: rgba(255, 255, 255, 0.8);
     }
   }
   .navbar-nav {
     .nav-item {
       .nav-link {
-        font-size: 100%;
-        font-weight: 400;
+        font-size: 85%;
+        font-weight: 700;
         padding: 0.75em 0;
-        letter-spacing: 1px;
-        color: #8f1718;
+        letter-spacing: 2px;
+        color: white;
+        text-transform: uppercase;
+        transition: color 0.2s ease;
         @include heading-font;
         &.active,
         &:hover {
-          color: darken(#8f1718, 10%);
+          color: rgba(255, 255, 255, 0.75);
         }
       }
     }
   }
 }
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s,
+      box-shadow 0.3s, background-color 0.3s;
     border: none;
     background-color: transparent;
+
     .navbar-brand {
+      color: white;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
       font-size: 1.75em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
       transition: all 0.3s;
     }
     .navbar-nav {
       .nav-item {
         .nav-link {
           padding: 1.1em 1em !important;
+          color: rgba(255, 255, 255, 0.92);
+          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+          &:hover {
+            color: white;
+          }
         }
       }
     }
+
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
       background-color: #8ab4b4;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
       .navbar-brand {
+        color: white;
+        text-shadow: none;
         font-size: 1.25em;
         padding: 12px 0;
       }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: rgba(255, 255, 255, 0.92);
+            text-shadow: none;
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Always-solid for inner pages (nav.html adds .navbar-page)
+  #mainNav.navbar-page {
+    background-color: #8ab4b4;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    .navbar-brand {
+      text-shadow: none;
+    }
+    .navbar-nav .nav-item .nav-link {
+      text-shadow: none;
     }
   }
 }

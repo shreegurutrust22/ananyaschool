@@ -1,10 +1,29 @@
 // Styling for the services section
 .service-heading {
-//   margin: 0px 0;
   text-transform: none;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .service-attribution {
   font-size: 60%;
   line-height: 60px;
+}
+
+section#services {
+  .row.text-center > [class*="col-"] {
+    padding: 35px 25px;
+    border-radius: 12px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .fa-stack {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
 }

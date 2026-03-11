@@ -1,6 +1,6 @@
 // Styling for the contact section
 section#contact {
-  background-color: #8AB4B4;
+  background: linear-gradient(135deg, #5d9999 0%, #8AB4B4 45%, #a3c8c8 100%);
   background-repeat: no-repeat;
   background-position: center;
   .section-heading {
@@ -11,6 +11,13 @@ section#contact {
     input,
     textarea {
       padding: 20px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      transition: box-shadow 0.3s ease, transform 0.2s ease;
+      &:focus {
+        transform: translateY(-1px);
+      }
     }
     input.form-control {
       height: auto;
@@ -21,7 +28,7 @@ section#contact {
   }
   .form-control:focus {
     border-color: $primary;
-    box-shadow: none;
+    box-shadow: 0 0 0 3px rgba(143, 23, 24, 0.15), 0 4px 15px rgba(0, 0, 0, 0.08);
   }
   ::-webkit-input-placeholder {
     font-weight: 700;

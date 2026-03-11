@@ -1,75 +1,57 @@
 <!-- Footer -->
-<footer class="footer" id="footer" style="background-color: white">
-  <div class="container">
-    {% if site.locale and site.locale != "" and site.locale != nil %}
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <span class="copyright"
-          >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
-        >
-      </div>
-      <!-- Social Media -->
-<!--      <div class="col-md-4">-->
-<!--        <ul class="list-inline social-buttons">-->
-<!--          {% for link in site.data.sitetext[site.locale].footer.social %}-->
-<!--          <li class="list-inline-item">-->
-<!--            {% if link.url %}-->
-<!--            <a href="{{ link.url }}">-->
-<!--              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}-->
-<!--            </a>-->
-<!--            {% endif %}-->
-<!--          </li>-->
-<!--          {% endfor %}-->
-<!--        </ul>-->
-<!--      </div>-->
-      <!-- Legal -->
-      <div class="col-md-6">
-        <ul class="list-inline quicklinks">
-          <li class="list-inline-item">
-            <a href="legal"
-              >{{ site.data.sitetext[site.locale].footer.legal | default:
-              "Privacy Policy" }}</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-    {% else %}
-    <div class="row align-items-center">
-      <div class="col-md-4">
-        <span class="copyright"
-          >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
-        >
-      </div>
-      <!-- Social Media -->
-<!--      <div class="col-md-4">-->
-<!--        <ul class="list-inline social-buttons">-->
-<!--          {% for link in site.data.sitetext.footer.social %}-->
-<!--          <li class="list-inline-item">-->
-<!--            {% if link.url %}-->
-<!--            <a href="{{ link.url }}">-->
-<!--              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}-->
-<!--            </a>-->
-<!--            {% endif %}-->
-<!--          </li>-->
-<!--          {% endfor %}-->
-<!--        </ul>-->
-<!--      </div>-->
-      <!-- Legal -->
-      <div class="col-md-4">
-        <ul class="list-inline quicklinks">
-          <li class="list-inline-item">
-            <a href="legal"
-              >{{ site.data.sitetext.footer.legal | default:
-              "Privacy Policy" }}</a
-            >
-          </li>
-        </ul>
+<footer class="footer" id="footer">
+  <div class="footer-main">
+    <div class="container">
+      <div class="row">
+
+        <!-- School identity -->
+        <div class="col-lg-4 col-md-12 footer-col">
+          <div class="footer-brand-title">{{ site.title }}</div>
+          <p class="footer-tagline">Serving the autism community<br>in Davanagere, Karnataka</p>
+          <a class="footer-youtube-link" href="https://www.youtube.com/@sumanjali1237" target="_blank" rel="noopener">
+            <i class="fab fa-youtube"></i>
+            <span>ANANYA SCHOOL FOR AUTISM DAVANAGERE</span>
+          </a>
+        </div>
+
+        <!-- Contact info -->
+        <div class="col-lg-4 col-md-6 footer-col">
+          <h5 class="footer-heading">Contact Us</h5>
+          <ul class="footer-contact-list">
+            <li><i class="fas fa-map-marker-alt"></i> No.151, Sri Guru, Ananya School for Autism,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S Nijalingappa Layout, Davanagere</li>
+            <li><i class="fas fa-phone"></i> 9916485871 &nbsp;|&nbsp; 9019965603</li>
+            <li><i class="fas fa-envelope"></i> ananyashreeguru@gmail.com</li>
+          </ul>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-lg-4 col-md-6 footer-col">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            {% if site.locale and site.locale != "" and site.locale != nil %}
+              {% for link in site.data.navigation[site.locale].nav %}
+              <li><a class="js-scroll-trigger" href="{{ site.baseurl }}/#{{ link.section }}">{{ link.title }}</a></li>
+              {% endfor %}
+            {% else %}
+              {% for link in site.data.navigation.nav %}
+              <li><a class="js-scroll-trigger" href="{{ site.baseurl }}/#{{ link.section }}">{{ link.title }}</a></li>
+              {% endfor %}
+            {% endif %}
+            <li><a href="legal">Privacy Policy</a></li>
+          </ul>
+        </div>
+
       </div>
     </div>
-    {% endif %}
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
+    </div>
   </div>
 </footer>
+
 {% if page.layout == "page" %}
 <script>
   fixPageShort();
