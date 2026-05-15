@@ -1,0 +1,51 @@
+<!-- Donation -->
+{% if site.locale and site.locale != "" and site.locale != nil %}
+<section class="page-section" id="{{ site.data.sitetext[site.locale].donation.section | default: 'donation' }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].donation.title | default: "Donation" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].donation.text | default: "" }}</h3>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6 mx-auto text-center text-md-left">
+        <div class="large text-muted">
+          <p><strong>EMPOWER A WOMAN. UPLIFT UNHEARD CHILDREN.<br>BUILD THE FUTURE.</strong></p>
+          <p>For the past 5 years, Dr. Suman's relentless struggle and incredible progress.<br>We are proud to champion her cause and appeal to your organization to join us.</p>
+          <p>This initiative aligns perfectly with corporate CSR objectives in Education, Healthcare, Social Inclusion, and Women's Empowerment. By partnering with Sri Guru Trust, you are directly funding a tangible, lasting asset that will serve marginalized children for decades.</p>
+          <p class="text-primary font-weight-bold">HELP US RAISE ₹80 LAKHS TO BREAK GROUND.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mx-auto text-center">
+        <img class="img-fluid" src="assets/img/donation_qr.jpg" alt="Donation QR Code" style="max-width: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      </div>
+    </div>
+  </div>
+</section>
+{% else %}
+<section class="page-section" id="{{ site.data.sitetext.donation.section | default: 'donation' }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.donation.title | default: "Donation" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext.donation.text | default: "" }}</h3>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6 mx-auto text-center text-md-left">
+        <div class="large text-muted">
+          <p><strong>EMPOWER A WOMAN. UPLIFT UNHEARD CHILDREN.<br>BUILD THE FUTURE.</strong></p>
+          <p>For the past 5 years, Dr. Suman's relentless struggle and incredible progress.<br>We are proud to champion her cause and appeal to your organization to join us.</p>
+          <p>This initiative aligns perfectly with corporate CSR objectives in Education, Healthcare, Social Inclusion, and Women's Empowerment. By partnering with Sri Guru Trust, you are directly funding a tangible, lasting asset that will serve marginalized children for decades.</p>
+          <p class="text-primary font-weight-bold">HELP US RAISE ₹80 LAKHS TO BREAK GROUND.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mx-auto text-center">
+        <img class="img-fluid" src="assets/img/donation_qr.jpg" alt="Donation QR Code" style="max-width: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End Donation -->
