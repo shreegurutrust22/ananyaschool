@@ -116,6 +116,12 @@ en: &DEFAULT_EN
 #          - url: https://linkedin.com
 #            icon: fab fa-linkedin-in
 
+donation:
+    title: "Donation"
+    text: "Your contributions help us provide better facilities and therapies for our children."
+    image: "assets/img/donation_qr.jpg"
+    section: donation
+
   contact:
     title: "<br/>Contact Us"
     text: "No.151, Sri Guru, Ananya School for Autism,<br/><br/>S Nijalingappa layout, Davanagere<br/><br/>Ph: 9916485871, 9019965603<br/><br/>Email: ananyashreeguru@gmail.com"
