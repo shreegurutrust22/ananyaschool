@@ -17,6 +17,8 @@ en: &DEFAULT_EN
       section: about
     - title: "Team"
       section: team
+    - title: "Donation"
+      section: donation
     - title: "Contact"
       section: contact
 en-US:
