@@ -116,7 +116,7 @@ en: &DEFAULT_EN
 #          - url: https://linkedin.com
 #            icon: fab fa-linkedin-in
 
-donation:
+  donation:
     title: "Donation"
     text: "Your contributions help us provide better facilities and therapies for our children."
     image: "assets/img/donation_qr.jpg"
