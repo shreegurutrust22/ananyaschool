@@ -1,3 +1,29 @@
+<style>
+.floating-whatsapp {
+
+    position: fixed;
+
+    bottom: 20px;
+
+    right: 20px;
+
+    background: #25D366;
+
+    color: white !important;
+
+    padding: 14px 18px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    z-index: 999;
+}
+</style>
 <!-- Contact -->
 {% if site.locale and site.locale != "" and site.locale != nil %}
 <section class="page-section" id="{{ site.data.sitetext[site.locale].contact.section | default: "contact" }}">
@@ -7,6 +33,11 @@
         <h2 class="section-heading text-uppercase">
           {{ site.data.sitetext[site.locale].contact.title | markdownify | default: Contact Us }}</h2>
         <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].contact.text | default: "" }}</h3>
+        <a href="tel:+919916485871">Call Us</a></br>
+        <a href="tel:+919019965603">Call Us</a></br>
+        <a href="mailto:ananyashreeguru@gmail.com?subject=Donation Inquiry">Contact via Email</a>
+        <p>Whatsapp:</p><a href="https://wa.me/919916485871" class="floating-whatsapp" target="_blank">WhatsApp 1</a>
+        <p>Whatsapp:</p><a href="https://wa.me/919019965603" class="floating-whatsapp" target="_blank">WhatsApp 2</a>
       </div>
     </div>
 <!--    <div class="row">-->
