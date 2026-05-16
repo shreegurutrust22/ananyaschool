@@ -1,4 +1,23 @@
 <!-- Donation -->
+<style>
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: blue;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: white !important;
+    text-decoration: none;
+}
+</style>
 {% if site.locale and site.locale != "" and site.locale != nil %}
 <section class="page-section" id="{{ site.data.sitetext[site.locale].donation.section | default: 'donation' }}">
   <div class="container">
@@ -14,15 +33,15 @@
           <p><strong>EMPOWER A WOMAN. UPLIFT UNHEARD CHILDREN.<br>BUILD THE FUTURE.</strong></p>
           <p>For the past 5 years, Dr. Suman's relentless struggle and incredible progress.<br>We are proud to champion her cause and appeal to your organization to join us.</p>
           <p>This initiative aligns perfectly with corporate CSR objectives in Education, Healthcare, Social Inclusion, and Women's Empowerment. By partnering with Sri Guru Trust, you are directly funding a tangible, lasting asset that will serve marginalized children for decades.</p>
-          <p class="text-primary font-weight-bold">HELP US RAISE ₹80 LAKHS TO BREAK GROUND.</p> </br>UPI Payment:</p><a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR" class="btn">Pay Now</a>
+          <p class="text-primary font-weight-bold">HELP US RAISE ₹80 LAKHS TO BREAK GROUND.</p> </br>UPI Payment: <a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR" class="btn">Pay Now</a>
           <p class="text-primary font-weight-bold">TAX & CSR COMPLIANCE:</p>
           <p>Sri Guru Trust is a registered non-profit organization. Donations are eligible for tax deductions under section 80G of the Income Tax Act. We are fully equipped to provide detailed project plans, budgets, and impact assessments for CSR partnerships.</p>
           <p class="text-primary font-weight-bold">LET'S BUILD THIS TOGETHER</p>
         </div>
       </div>
       <div class="col-md-6 mx-auto text-center">
-        <p class="text-primary font-weight-bold">UPI Payment:</p> <a =href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR">Pay Now</a>
-        <img class="img-fluid" src="assets/img/donation_qr.jpg" alt="Donation QR Code" style="max-width: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <p class="text-primary font-weight-bold">UPI Payment:</p><a =href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR">
+        <img class="img-fluid" src="assets/img/donation_qr.jpg" alt="Donation QR Code" style="max-width: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></a>
       </div>
     </div>
   </div>
