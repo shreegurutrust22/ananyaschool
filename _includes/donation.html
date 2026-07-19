@@ -17,7 +17,15 @@
     color: white !important;
     text-decoration: none;
 }
+.donation-img {
+    max-width: 100%;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
 </style>
+
 {% if site.locale and site.locale != "" and site.locale != nil %}
 <section class="page-section" id="{{ site.data.sitetext[site.locale].donation.section | default: 'donation' }}">
   <div class="container">
@@ -28,41 +36,32 @@
       </div>
     </div>
     <div class="row align-items-center">
-      <div class="col-md-6 mx-auto text-center text-md-left">
+      <div class="col-lg-6 text-center text-md-left">
         <div class="large text-muted">
           <p>UPI Payment:&nbsp;&nbsp; <a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR" class="btn">Pay Now</a></p>
           <p><strong>EMPOWER A WOMAN. UPLIFT UNHEARD CHILDREN.<br>BUILD THE FUTURE.</strong></p>
           <p>For the past 5 years, Dr. Suman's relentless struggle and incredible progress.<br>We are proud to champion her cause and appeal to your organization to join us.</p>
           <p>This initiative aligns perfectly with corporate CSR objectives in Education, Healthcare, Social Inclusion, and Women's Empowerment. By partnering with Sri Guru Trust, you are directly funding a tangible, lasting asset that will serve marginalized children for decades.</p>
-          <p class="text-primary font-weight-bold">HELP US RAISE ₹80 LAKHS TO BREAK GROUND.</p> </br>UPI Payment:&nbsp;&nbsp; <a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR" class="btn">Pay Now</a>
+          <p class="text-primary font-weight-bold">HELP US RAISE ₹80 LAKHS TO BREAK GROUND.</p> 
+          <p>UPI Payment:&nbsp;&nbsp; <a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR" class="btn">Pay Now</a></p>
           <p class="text-primary font-weight-bold">TAX & CSR COMPLIANCE:</p>
           <p>Sri Guru Trust is a registered non-profit organization. Donations are eligible for tax deductions under section 80G of the Income Tax Act. We are fully equipped to provide detailed project plans, budgets, and impact assessments for CSR partnerships.</p>
           <p class="text-primary font-weight-bold">LET'S BUILD THIS TOGETHER</p>
         </div>
       </div>
-      <div class="col-md-6 mx-auto text-center">
-        <div class="col-md-6 mx-auto text-center">
-  <p class="text-primary font-weight-bold">UPI Payment: Click QR code</p>
-  <a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR">
-    <img class="img-fluid"
-         src="assets/img/donation_qr.jpg"
-         alt="Donation QR Code"
-         style="max-width: 300px;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                cursor: pointer;">
-  </a>
+      <div class="col-lg-6">
+        <div class="row text-center">
+          <div class="col-sm-6 mb-4">
+            <p class="text-primary font-weight-bold">UPI Payment: Click QR code</p>
+            <a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR">
+              <img class="img-fluid donation-img" src="assets/img/donation_qr.jpg" alt="Donation QR Code">
+            </a>
+          </div>
+          <div class="col-sm-6 mb-4">
+            <p class="text-primary font-weight-bold">Bank Account:</p>
+            <img class="img-fluid donation-img" src="assets/img/AnanyaSchoolBankAcc.png" alt="Bank Account">
+          </div>
         </div>
-           <div class="col-md-6 mx-auto text-center">
-  <p class="text-primary font-weight-bold">Bank Account:</p>
-            <img class="img-fluid"
-         src="assets/img/AnanyaSchoolBankAcc.png"
-         alt="Bank Account"
-         style="max-width: 300px;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                cursor: pointer;">
-</div>
       </div>
     </div>
   </div>
@@ -77,44 +76,32 @@
       </div>
     </div>
     <div class="row align-items-center">
-      <div class="col-md-6 mx-auto text-center text-md-left">
+      <div class="col-lg-6 text-center text-md-left">
         <div class="large text-muted">
           <p><strong>EMPOWER A WOMAN. UPLIFT UNHEARD CHILDREN.<br>BUILD THE FUTURE.</strong></p>
           <p>For the past 5 years, Dr. Suman's relentless struggle and incredible progress.<br>We are proud to champion her cause and appeal to your organization to join us.</p>
           <p>This initiative aligns perfectly with corporate CSR objectives in Education, Healthcare, Social Inclusion, and Women's Empowerment. By partnering with Sri Guru Trust, you are directly funding a tangible, lasting asset that will serve marginalized children for decades.</p>
-          <p class="text-primary font-weight-bold">HELP US RAISE ₹80 LAKHS TO BREAK GROUND. </br>UPI Payment:</p><a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR" class="btn">Pay Now</a>
+          <p class="text-primary font-weight-bold">HELP US RAISE ₹80 LAKHS TO BREAK GROUND.</p>
+          <p>UPI Payment: <a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR" class="btn">Pay Now</a></p>
           <p class="text-primary font-weight-bold">TAX & CSR COMPLIANCE:</p>
           <p>Sri Guru Trust is a registered non-profit organization. Donations are eligible for tax deductions under section 80G of the Income Tax Act. We are fully equipped to provide detailed project plans, budgets, and impact assessments for CSR partnerships.</p>
           <p class="text-primary font-weight-bold">LET'S BUILD THIS TOGETHER</p>
-          <p class="text-primary font-weight-bold">UPI Payment:</p><a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR" class="btn btn-primary btn-sm mb-3">Pay Now</a>
+          <p>UPI Payment: <a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR" class="btn btn-primary btn-sm mb-3">Pay Now</a></p>
         </div>
       </div>
-      <div class="col-md-6 mx-auto text-center">
-       <div class="col-md-6 mx-auto text-center">
-  <p class="text-primary font-weight-bold">UPI Payment:</p>
-
-  <a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR">
-
-    <img class="img-fluid"
-         src="assets/img/donation_qr.jpg"
-         alt="Donation QR Code"
-         style="max-width: 300px;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                cursor: pointer;">
-
-  </a>
-</div>
-          <div class="col-md-6 mx-auto text-center">
-  <p class="text-primary font-weight-bold">Bank Account:</p>
-            <img class="img-fluid"
-         src="assets/img/AnanyaSchoolBankAcc.png"
-         alt="Bank Account"
-         style="max-width: 300px;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                cursor: pointer;">
-</div>
+      <div class="col-lg-6">
+        <div class="row text-center">
+          <div class="col-sm-6 mb-4">
+            <p class="text-primary font-weight-bold">UPI Payment:</p>
+            <a href="upi://pay?pa=srig9986603@barodampay&pn=ReceiverName&cu=INR">
+              <img class="img-fluid donation-img" src="assets/img/donation_qr.jpg" alt="Donation QR Code">
+            </a>
+          </div>
+          <div class="col-sm-6 mb-4">
+            <p class="text-primary font-weight-bold">Bank Account:</p>
+            <img class="img-fluid donation-img" src="assets/img/AnanyaSchoolBankAcc.png" alt="Bank Account">
+          </div>
+        </div>
       </div>
     </div>
   </div>
